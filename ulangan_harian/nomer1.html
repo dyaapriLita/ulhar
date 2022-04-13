@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nilai terbesar</title>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+<script>
+ 
+var nilai = [6,7]          
+for(var i=0;i<nilai.length;i++)
+        {    
+             if(i == 0)
+             { 
+              var nilai_mak = nilai[i];
+             }
+             else
+             {
+                    if(nilai[i] > nilai_mak)
+                    {
+                      nilai_mak = nilai[i];
+                    }
+             }              
+        }  
+				document.getElementById("demo").innerHTML = 'Data terbesar dari bilangan [6,7] adalah'+nilai_mak; 
+ 
+</script>
+</html>

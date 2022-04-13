@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+            h2, h4{
+                margin: 0;
+            }
+            p#demo {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Menentukan Bilangan Ganjil Genap</h2>
+        <br >
+        <!-- Penginputan Bilangan  -->
+        <p>Bilangan <input type="number" id="myNumber"> <button onclick="cekGanjilGenap()">Cek</button></p>
+        <p id="demo"></p>
+        <script>
+            //Penghitungan dan Pengecekan Hasil Modulo
+            function cekGanjilGenap(){
+                var bilangan = document.getElementById("myNumber").value
+                if(bilangan % 2 == 0)
+                    document.getElementById("demo").innerText = "Bilangan Genap"
+                else
+                    document.getElementById("demo").innerText = "Bilangan Ganjil"
+            }
+        </script>
+    </body>
+</html>
